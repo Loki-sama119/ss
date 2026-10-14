@@ -1,34 +1,280 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danh sách thẻ sản phẩm co giãn</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang web Portfolio cá nhân - Dự án tốt nghiệp khóa học HTML & CSS">
+    <title>Portfolio Cá Nhân | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="page">
-    <h1>Danh sách sản phẩm</h1>
-    <p class="intro">Khám phá các sản phẩm nổi bật của chúng tôi.</p>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">&lt;DevPortfolio/&gt;</a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">Giới thiệu</a>
+                <a href="#skills" class="nav-link">Kỹ năng</a>
+                <a href="#projects" class="nav-link">Dự án</a>
+                <a href="#contact" class="nav-link">Liên hệ</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn" aria-label="Đổi giao diện">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <div class="product-grid">
-      <div class="product-card">
-        <h4>Sản phẩm 1</h4>
-        <p class="price">500.000 đ</p>
-      </div>
-      <div class="product-card">
-        <h4>Sản phẩm 2</h4>
-        <p class="price">750.000 đ</p>
-      </div>
-      <div class="product-card">
-        <h4>Sản phẩm 3</h4>
-        <p class="price">1.200.000 đ</p>
-      </div>
-      <div class="product-card">
-        <h4>Sản phẩm 4</h4>
-        <p class="price">320.000 đ</p>
-      </div>
-    </div>
-  </main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">👋 Xin chào, tôi là</span>
+                <h1 class="hero-title">Lập Trình Viên <span class="gradient-text">Front-End</span></h1>
+                <p class="hero-subtitle">Xây dựng những giao diện web hiện đại, mượt mà và tối ưu trải nghiệm người dùng với HTML, CSS và JavaScript.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">Xem Dự Án <i class="fa-solid fa-arrow-down"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Liên Hệ <i class="fa-solid fa-paper-plane"></i></a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=600&h=600" alt="Avatar lập trình viên">
+                    <div class="experience-badge">
+                        <i class="fa-solid fa-code"></i>
+                        <span>HTML5 & CSS3 Mastered</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title">Về Bản Thân</h2>
+            <p class="section-subtitle">Hành trình chinh phục thiết kế và phát triển giao diện Web</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fa-solid fa-laptop-code card-icon"></i>
+                    <h3>Đam mê Công nghệ</h3>
+                    <p>Luôn yêu thích việc biến các ý tưởng thiết kế ý nghĩa thành những dòng mã sạch, chuẩn SEO và phản hồi nhanh trên mọi thiết bị.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fa-solid fa-layer-group card-icon"></i>
+                    <h3>Thiết kế Responsive</h3>
+                    <p>Làm chủ kĩ thuật Flexbox, Grid và Media Queries để đảm bảo website hiển thị hoàn hảo trên Mobile, Tablet và Desktop.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fa-solid fa-rocket card-icon"></i>
+                    <h3>Học hỏi Không ngừng</h3>
+                    <p>Đã hoàn thành xuất sắc dự án khóa học HTML & CSS và sẵn sàng chinh phục các công cụ tiếp theo như JavaScript, React & Tailwind CSS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Kỹ Năng Kỹ Thuật</h2>
+            <p class="section-subtitle">Nền tảng vững chắc đã được tích lũy qua khóa học</p>
+
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fa-brands fa-html5 text-orange"></i> HTML5 (Semantic Structure)</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fa-brands fa-css3-alt text-blue"></i> CSS3 (Flexbox, Grid, Animations)</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fa-solid fa-mobile-screen text-green"></i> Responsive Web Design</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 92%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fa-brands fa-git-alt text-red"></i> Git & GitHub Basics</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fa-solid fa-cloud-arrow-up text-purple"></i> Deployment (Netlify, Vercel)</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fa-brands fa-js text-yellow"></i> JavaScript (Co bản & DOM)</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Dự Án Nổi Bật</h2>
+            <p class="section-subtitle">Các sản phẩm thực hành thực tế trong quá trình học tập</p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fit=crop&w=600&h=400" alt="Dự án Landing Page">
+                    </div>
+                    <div class="project-body">
+                        <span class="project-category">Landing Page</span>
+                        <h3 class="project-title">Trang Giới Thiệu Sản Phẩm Công Nghệ</h3>
+                        <p class="project-desc">Trang landing page hiện đại kết hợp CSS Animations, Hero banner độc đáo và bố cục Grid linh hoạt.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS Grid</span>
+                            <span>Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-link"><i class="fa-solid fa-globe"></i> Xem Demo</a>
+                            <a href="#" class="btn-link"><i class="fa-brands fa-github"></i> Mã Nguồn</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?fit=crop&w=600&h=400" alt="Dự án Dashboard">
+                    </div>
+                    <div class="project-body">
+                        <span class="project-category">Web UI Component</span>
+                        <h3 class="project-title">Bảng Điều Khiển Quản Lý Cá Nhân</h3>
+                        <p class="project-desc">Giao diện quản lý công việc và chỉ số với Sidebar co giãn, Dark Mode toggle và bảng biểu đẹp mắt.</p>
+                        <div class="project-tags">
+                            <span>Flexbox</span>
+                            <span>CSS Variables</span>
+                            <span>UI Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-link"><i class="fa-solid fa-globe"></i> Xem Demo</a>
+                            <a href="#" class="btn-link"><i class="fa-brands fa-github"></i> Mã Nguồn</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?fit=crop&w=600&h=400" alt="Dự án Personal Portfolio">
+                    </div>
+                    <div class="project-body">
+                        <span class="project-category">Dự Án Tốt Nghiệp</span>
+                        <h3 class="project-title">Trang Web Portfolio Cá Nhân</h3>
+                        <p class="project-desc">Sản phẩm tổng hợp toàn bộ kiến thức HTML & CSS: Chuẩn SEO, truy cập tốt, tương thích đa thiết bị và xuất bản trên Netlify.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Netlify Drop</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-link"><i class="fa-solid fa-globe"></i> Xem Demo</a>
+                            <a href="#" class="btn-link"><i class="fa-brands fa-github"></i> Mã Nguồn</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Liên Hệ Với Tôi</h2>
+            <p class="section-subtitle">Bạn có dự án hoặc cơ hội hợp tác? Hãy gửi lời nhắn ngay nhé!</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@mydomain.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Điện thoại</h4>
+                            <p>+84 987 654 321</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Địa điểm</h4>
+                            <p>Hà Nội, Việt Nam</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Họ và tên</label>
+                        <input type="text" id="name" required placeholder="Nguyễn Văn A">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Lời nhắn</label>
+                        <textarea id="message" rows="5" required placeholder="Nội dung lời nhắn của bạn..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Gửi Lời Nhắn <i class="fa-solid fa-paper-plane"></i></button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Developer Portfolio. Tất cả bản quyền được bảo lưu.</p>
+            <p>Xây dựng với ❤️ qua Khóa học HTML & CSS.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
